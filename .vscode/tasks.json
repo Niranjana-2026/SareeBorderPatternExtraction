@@ -1,0 +1,51 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "1. Run Main Project (Launch GUI)",
+            "type": "shell",
+            "command": "matlab -nosplash -r \"main\"",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "2. Run Automated Demo (runDemo)",
+            "type": "shell",
+            "command": "matlab -batch \"runDemo\"",
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "3. Run Test Suite (testProject)",
+            "type": "shell",
+            "command": "matlab -batch \"testProject\"",
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "4. Download Real Saree Dataset (PowerShell)",
+            "type": "shell",
+            "command": "powershell -ExecutionPolicy Bypass -File .\\downloadDataset.ps1",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

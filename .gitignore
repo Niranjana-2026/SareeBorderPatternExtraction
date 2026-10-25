@@ -1,0 +1,25 @@
+# MATLAB
+*.asv
+*.m~
+*.slxc
+*.matlab
+slprj/
+codegen/
+*.mex*
+
+# Temporary files & logs
+temp_*
+*.log
+*.tmp
+*.bak
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Outputs that can be regenerated (keep directories via .gitkeep if needed)
+# output/extracted_borders/*
+# output/comparisons/*
+# output/reports/*
